@@ -1,11 +1,9 @@
 <?php
 
-#$conn = mysqli_connect('localhost','root','','cart_db');
-#$db = new PDO("mysql:host=localhost; dbname=kisisel_kutuphane",'root','');
-$server = "localhost";
+$server = "t";
 $password = "";
-$user = "root";
-$databaseName = "2020800277";
+$user = "";
+$databaseName = "";
 #$db = new PDO('mysql:host=localhost;dbname=' . $databaseName, $user, $password);
 $conn = mysqli_connect($server, $user, $password, $databaseName);
 
@@ -41,12 +39,10 @@ if($_SERVER['REQUEST_METHOD']=="POST")
         header("location:dashboard.php");
     }
 
-    else
-    {
-        echo "username or password incorrect";
-    }
-
-
+}
+else
+{
+    echo "username or password incorrect";
 }
 */
 
